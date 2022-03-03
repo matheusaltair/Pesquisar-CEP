@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(36, 36, 36) , rgb(76, 0, 255));
+}
+
+.container h1{
+  font-size: 50px;
+  color: white;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+.inputContainer{
+  background-color: rgba(255, 255, 255, 0.583);
+  display: flex;
+  margin: 30px;
+  padding: 5px;
+  border-radius: 8px;
+  animation: fadeIn 2s;
+}
+.inputContainer input::placeholder{
+  color: #fff;
+}
+
+.inputContainer input{
+  background-color: transparent;
+  color: white;
+  border: 0;
+  margin: 8px 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+.inputContainer Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-right: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.inputContainer button:hover{
+  transform: scale(1.3);
+}
+
+main{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.583);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.main h2{
+  margin: 15px;
+  font-size: 30px;
+}
+
+.main span{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
